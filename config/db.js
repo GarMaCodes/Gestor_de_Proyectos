@@ -1,6 +1,7 @@
 "use strict";
 //Conectando el proyecto a la base de datos
 const mongoose = require("mongoose");
+require("dotenv").config({ path: "variables.env" });
 
 const connectDB = async () => {
   try {
