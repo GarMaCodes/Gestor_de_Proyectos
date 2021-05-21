@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb+srv://GarMaCodes:SIMhaselyn2003dis@cluster0.fty6x.mongodb.net/gestor_de_proyectos", {
+    await mongoose.connect(proces.env.DB_MONGO, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
       useCreateIndex: true,
