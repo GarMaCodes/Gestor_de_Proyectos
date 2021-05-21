@@ -8,7 +8,6 @@ const connectDB = async () => {
     await mongoose.connect(process.env.DB_MONGO, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
-      useCreateIndex: true,
       useFindAndModify: false,
     });
     console.log(
