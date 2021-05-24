@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json({ extended: true }));
 
 //Puerto del servidor
-const port = process.env.PORT; //Si no existe el puerto se asigna 4000
+const port = process.env.PORT || 5000; //Si no existe el puerto se asigna 4000
 
 //Importando rutas Middlewares
 app.use("/api/usuarios", require("./routes/usuarios"));
